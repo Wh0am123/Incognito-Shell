@@ -13,7 +13,7 @@ Incognito Shell is a simple Bash script that spawns a new shell where command hi
 ✔️ **No changes** to `.bash_history` or `.zsh_history`  
 ✔️ **Executes a clean shell** without profiles or history tracking  
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 1. **Clone the repository**  
    ```sh

@@ -25,3 +25,6 @@ Incognito Shell is a simple Bash script that spawns a new shell where command hi
    chmod +x incognito.sh
    ./incognito.sh
    ```
+## ⚠️ Disclaimer
+This tool is intended for legal security research and ethical hacking.
+Use it responsibly and only on machines where you have explicit permission.

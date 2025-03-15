@@ -9,8 +9,7 @@ start_incognito_shell() {
         "bash")
             echo "[*] Starting incognito Bash shell..."
             export HISTFILE=/dev/null  # redirect history to /dev/null
-            set +o history             
-            exec bash --noprofile --norc
+            bash --noprofile --norc
             ;;
         "zsh")
             echo "[*] Starting incognito Zsh shell..."
@@ -21,11 +20,11 @@ start_incognito_shell() {
         "sh")
             echo "[*] Starting incognito SH shell..."
             export HISTFILE=/dev/null # redirect history to /dev/null
-            set +o history
-            exec sh
+            sh
             ;;
         *)
             echo "[!] Unsupported shell: $PARENT_SHELL"
+            echo " Try running bash incognito.sh"
             exit 1
             ;;
     esac

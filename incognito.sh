@@ -8,19 +8,15 @@ start_incognito_shell() {
     case "$PARENT_SHELL" in
         "bash")
             echo "[*] Starting incognito Bash shell..."
-            export HISTFILE=/dev/null  # redirect history to /dev/null
-            bash --noprofile --norc
+            export HISTSIZE=0  #
             ;;
         "zsh")
             echo "[*] Starting incognito Zsh shell..."
-            export HISTFILE=/dev/null  # redirect history to /dev/null
-            unset HISTFILE             
-            zsh
+            export HISTSIZE=0  # redirect history to /dev/null
             ;;
         "sh")
             echo "[*] Starting incognito SH shell..."
-            export HISTFILE=/dev/null # redirect history to /dev/null
-            sh
+            export HISTSIZE=0 # redirect history to /dev/null
             ;;
         *)
             echo "[!] Unsupported shell: $PARENT_SHELL"
